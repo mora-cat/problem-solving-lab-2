@@ -21,13 +21,15 @@ Print A, B, C, D, or F based on score */
 
 let score = 82; 
 if (score >= 90) {
-    console.log("A"); // if true, it prints an A in the console  
-} else if (score => 80) {
+    console.log("A"); 
+} else if (score >= 80) {
     console.log("B");
-} else if (score => 70) {
+} else if (score >= 70) {
     console.log("C");
-} else if (score => 60) {
+} else if (score >= 60) {
     console.log("D");
 } else {
-    // if score is not A,B,C,D, then it is F
+    console.log("F");
+    // this ELSE {} empty, means if score is not A,B,C,D, then it is F.
 }
+
