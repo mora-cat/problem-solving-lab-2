@@ -7,12 +7,18 @@
 </head>
 <h1>JavaScript Interaction</h1>
 
+<button onclick="sayHello()">Greet</button>
+<p id="message">Click the button to change this text.</p>
 
-
-
+<input type="text" id="nameInput" placeholder="Enter your name" />
+<button onclick="showName()">Submit</button>
+<p id="output"></p>
 
 
 <body>
+
+    <!-- here the 'defer' attribute tells the browser to download the JS file but NOT to run it until the whole HTML page has loaded, otherwise the browser might crash. 
+    Using defer you can place the JS links in the <head> or anywhere on the HTML page -->
     
     <script src="part1-conditionals.js" defer></script>
     <script src="part2-functions.js" defer></script>
